@@ -3,7 +3,7 @@
  *as Power function, Factorial functions which are required for implementing Taylor series.
  *
  *@author Team 11 - Azmina, Nithya, Jigish, Kalpit
- *@version 1.0
+ *@version 4.0 
  *
  */
 
@@ -21,6 +21,10 @@ public class TrigoTaylorFunction {
 	{
 		return (rad1 % (2*pi));
 	}
+	/*
+	 * It computes power in which user will enter base and power
+	 * if negative is there then it will throw the exception 
+	 * if successfully runs then it will return base n times where n is power*/
 	public static double powerResult(double base,double power)
 	{
 		double answer = 1;
@@ -49,6 +53,9 @@ public class TrigoTaylorFunction {
 	return answer;
 		
 	}
+	/*
+	 * This factorial function returns the result of positive numbers as taylor series requires it in denominator
+	 */
 	public static long Factorial(int den)
 	{
 		long fact = 1;
@@ -71,6 +78,9 @@ public class TrigoTaylorFunction {
 		}
 		return fact;
 	}
+	/*
+	 * this method returns the sin value of any angle where radinput is an angle provided by user
+	 * */
 	public static double TrignoSin(double radinput)
 	{
 		/*
@@ -89,6 +99,9 @@ public class TrigoTaylorFunction {
 		
 		return sinResult;
 	}
+	/*
+	 * this method returns the cos value of any angle where radinput is an angle provided by user
+	 * */
 	public static double TrignoCos()
 	{
 		/*
@@ -104,13 +117,16 @@ public class TrigoTaylorFunction {
 		
 		return cosResult;
   	}
+	/*
+	 * this method returns the Tan value of any angle where radinput is an angle provided by user
+	 * */
 	public static double TrignoTan()
 	{
 		/*
 		 * As the formula to compute Tan is simple that is Tan(x) = Sin(x)/Cos(x)
 		 * */
 		TanResult = 0;
-		TanResult = TrignoSin(radinput)/TrignoCos(radinput);
+		TanResult = (TrignoSin(radinput)/TrignoCos(radinput));
 		return TanResult;
 	}
 
