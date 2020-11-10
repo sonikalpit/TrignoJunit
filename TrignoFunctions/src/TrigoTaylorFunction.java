@@ -11,6 +11,12 @@ import java.util.Scanner;
 
 public class TrigoTaylorFunction {
 	
+	public final static double pi = 3.14159;			
+	public final static double angle = 360;
+	public static double sinResult = 0;
+	public static double cosResult = 0;
+	public static double TanResult = 0;
+	
 	// Conversion of Degree input to Radian
 	public static double DegToRad(double deg1)
 	{
