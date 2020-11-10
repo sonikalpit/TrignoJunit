@@ -91,11 +91,27 @@ public class TrigoTaylorFunction {
 	}
 	public static double TrignoCos()
 	{
+		/*
+		 * taylor series for cos is summation of (-1)n * x(2n)/(2n)!
+		 * */
+		cosResult=0;
+		double calNormedAngle = RadNormalize(radinput);
+				
+		for(int i=1;i<=10;i++)
+		{
+			cosResult = cosResult + (powerResult(-1, i-1) * powerResult(calNormedAngle, 2*(i-1)) / Factorial(2*(i-1)));
+		}
 		
+		return cosResult;
   	}
 	public static double TrignoTan()
 	{
-		
+		/*
+		 * As the formula to compute Tan is simple that is Tan(x) = Sin(x)/Cos(x)
+		 * */
+		TanResult = 0;
+		TanResult = TrignoSin(radinput)/TrignoCos(radinput);
+		return TanResult;
 	}
 
 }
