@@ -39,6 +39,10 @@ public class TrigoTaylorFunction {
 	public static double TrignoCos()
 	{
 		
-  }
+  	}
+	public static double TrignoTan()
+	{
+		
+	}
 
 }
