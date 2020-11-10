@@ -23,12 +23,12 @@ public class TrigoTaylorFunctionTest {
 
 	@Test
 	public void testTrignoCos() {
-		fail("Not yet implemented");
+		assertEquals(Math.cos(30), TrigoTaylorFunction.TrignoCos(30),delta);
 	}
 	
 	@Test
 	public void testTrignoTan() {
-		fail("Not yet implemented");
+		assertEquals(Math.tan(30), TrigoTaylorFunction.TrignoTan(30),delta);
 	}
 	
 	@Test
